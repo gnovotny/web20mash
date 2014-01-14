@@ -1,0 +1,147 @@
+# German translations for PACKAGE package
+# German messages for PACKAGE.
+# Copyright (C) 2013 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the web20mash package.
+# Sven Geggus <sven-git@geggus.net>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-23 17:29+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Sven Geggus <sven-git@geggus.net>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: menustrings.h
+msgid  "Actuator-Settings"
+msgstr "Aktoreinstellungen"
+
+#: mashstates.h:9
+msgid  "Dextrose Rest"
+msgstr "Dextroserast"
+
+#: menustrings.h
+msgid  "Dur. Dextrose Rest"
+msgstr "Dauer Dextroserast"
+
+#: menustrings.h
+msgid  "Dur. Maltose Rest"
+msgstr "Dauer Maltoserast"
+
+#: menustrings.h
+msgid  "Dur. Mashing out"
+msgstr "Dauer Abmaischen"
+
+#: menustrings.h
+# â is ß in latin-1
+msgid  "Dur. Protein Rest"
+msgstr "Dauer Eiweiârast"
+
+#: mashstates.h:7
+msgid  "Maltose Rest"
+msgstr "Maltoserast"
+
+#: menustrings.h
+msgid  "Mash-Control"
+msgstr "Maischesteuerung"
+
+#: menustrings.h
+msgid  "Mash-State"
+msgstr "Prozesszustand"
+
+#: mashstates.h:11
+msgid  "Mashing Out Rest"
+msgstr "Abmaischrast"
+
+#: mashstates.h:5
+# â is ß in latin-1
+msgid "Protein Rest"
+msgstr "Eiweiârast"
+
+#: menustrings.h
+msgid  "Rest-Settings"
+msgstr "Einstellung Rasten"
+
+#: menustrings.h
+msgid  "Temp. @Mashing out"
+msgstr "Abmaischtemperatur"
+
+#: menustrings.h
+msgid  "Temp. Dextrose Rest"
+msgstr "Temp. Dextroserast"
+
+#: menustrings.h
+msgid  "Temp. Maltose Rest"
+msgstr "Temp. Maltoserast"
+
+#: menustrings.h
+# â is ß in latin-1
+msgid  "Temp. Protein Rest"
+msgstr "Temp. Eiweiârast"
+
+#: menustrings.h
+msgid  "Waiting for data    from mashctld"
+msgstr "Warte auf Daten     von mashctld"
+
+#: menustrings.h
+msgid "heater"
+msgstr "Heizung"
+
+#: menustrings.h
+msgid  "off"
+msgstr "aus"
+
+#: menustrings.h
+msgid  "on "
+msgstr "ein"
+
+#: menustrings.h
+msgid  "start process"
+msgstr "Prozess starten"
+
+#: menustrings.h
+# õ is ü in latin-1
+msgid  "stirring device"
+msgstr "Rõhrwerk"
+
+#: menustrings.h
+msgid  "cancel process"
+msgstr "Prozess abbrechen"
+
+#: mashstates.h:8
+msgid  "to Dextrose Rest"
+msgstr "bis Dextroserast"
+
+#: mashstates.h:6
+msgid  "to Maltose Rest"
+msgstr "bis Maltoserast"
+
+#: mashstates.h:4
+msgid  "to Protein Rest"
+msgstr "bis Eiweiârast"
+
+#: mashstates.h:10
+msgid  "to mashing out"
+msgstr "bis Abmaischen"
+
+#: menustrings.h
+msgid "Network info"
+msgstr "Netzwerkinfo"
+
+#: menustrings.h
+msgid "MAC-address"
+msgstr "MAC-Adresse"
+
+#: menustrings.h
+msgid "IPv4-address"
+msgstr "IPv4-Adresse"
+
+#: menustrings.h
+msgid "No active Interface"
+msgstr "Kein Interface aktiv"
+

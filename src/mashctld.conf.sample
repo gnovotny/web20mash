@@ -1,0 +1,110 @@
+[global]
+# port to listen to for integrated webserver
+port=8888
+
+# the following two directories configurations can be 
+# omitted if an installed version (e.g. debian package or make install)
+webroot=/usr/share/web20mash/
+plugin_dir=/usr/lib/web20mash/plugins
+
+# If our root-filesysystem is readonly (e.g. on Raspberry pi) we might need to call
+# an external script, which will do something after our runtime configuration file has
+# been changed.
+#conf_change_script=/usr/bin/mashctld_readonly_root_script.sh
+
+[auth]
+active=0
+username=login
+password=secret
+
+[control]
+# owfs parameters
+#
+# this is usually the address of an owserver
+# (host:port default server port is 4304,
+# so localhost:4304 should be common)
+# or just something like "-u" for direct connection via usb.
+# However direct connection does only make sense if mashctld
+# is the only software accessing the 1-wire bus
+# For DS2483 e.g. RaspIO
+owparms=--i2c=/dev/i2c-1:18 --no_PPM
+# for DS2490 e.g. DS9490R
+#owparms=-u
+# for owserver running on localhost connected to any busmaster
+#owparms=localhost
+
+# initial must temperature for control
+tempMust=0
+
+# Avalable 1-wire devices can be listed by calling "mashctld -l"
+#
+#
+
+# 1-wire temperature sensor ID
+sensor=10.AAAAAAAAAAAA
+
+# actuator device type (onewire, gpio or external):
+# device ID, external command etc. must be specified
+# in the plugin section of the particular type
+actuator=external
+# stirring device type (onewire,gpio or external):
+stirring_device=gpio
+
+# hysteresis of two-level controller
+hysteresis=0.2
+
+# devicetype under control
+# do not change this unless you intend to control a fridge :)
+# only valid if state-machine is not in action
+# valid options: heater, cooler
+actuatortype=heater
+
+# If you want to control a stirring device in addition to a heater
+# add something like this
+# stirring_device=external
+#
+# stirring device on/off parameters for each state
+# values are times in seconds always off is 0:0, always on is x:0 (x>0)
+#stirring_states=0:0,1:0,16:8,1:0,16:8,1:0,16:8,1:0,16:8
+#ext_stirring_device_on=sispm +2
+#ext_stirring_device_off=sispm -2
+
+[mash-process]
+resttemp1=52.5
+resttemp2=62.5
+resttemp3=72.5
+# Temperature for lautering
+# This is a optional feature, because some people (including myself)
+# do lautering right after rest 3
+# If you do not want to do this just set lauteringtemp to the
+# same value as resttemp3
+lauteringtemp=76
+# All restimes in Minutes
+resttime1=0
+resttime2=20
+resttime3=20
+lauteringtime=0
+
+# external command to be executed when mash state is entered
+# can be used to control external displays, LEDs etc.
+# %d will be replaced by state number
+# state_change_cmd=mps2iConnectLED %d
+# this is for running a buzzer on gpio18 for 1 second
+#state_change_cmd=gpio_buzzer 1
+
+# actuator plugin configuration
+[actuator_plugin_external]
+actuator_on=sispm +1
+actuator_off=sispm -1
+stirring_device_on=sispm +2
+stirring_device_off=sispm -2
+
+[actuator_plugin_gpio]
+actuator=/sys/class/gpio/gpio25/value
+stirring_device=/sys/class/gpio/gpio26/value
+
+[actuator_plugin_onewire]
+actuator=12.AAAAAAAAAAAA
+actuator_port=PIO.A
+stirring_device=12.AAAAAAAAAAAA
+stirring_device_port=PIO.B

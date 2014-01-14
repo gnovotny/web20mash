@@ -1,0 +1,21 @@
+Name webmash_4x20_client
+
+Usage {non-browser client for mashctld using a HD44780U compatible LCD and 4 keys on GPIO-ports}
+
+Flag -bd daemon {run Program as a daemon in background}
+
+Int -k keys {gpio ports connected to keys (Menu, up, down, Enter)} -d 11 9 10 22 -c 4 4
+
+Int -lcd lcd {gpio ports for LCD} -d 4 7 8 23 24 25 -c 6 6
+
+String -u url {base url for mashctld state} -d "http://localhost"
+
+Flag -dbg debug {enable debug output}
+
+Flag -n netinfo {enable display of network interface information (IP, MAC, ...)]}
+
+String -l lang {display language to use e.g. de_DE.UTF-8}
+
+String -b banner {Banner to be displayed e.g. mybrewery}
+
+String -mc messagecat {base path of message catalog}

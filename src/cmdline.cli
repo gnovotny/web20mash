@@ -1,0 +1,43 @@
+# mashctld
+#
+# a web-controllable two-level temperature and mash process
+# controler for 1-wire sensor (DS18S20/DS18B20) and various actuators
+#
+# (c) 2011-2012 Sven Geggus <sven-web20mash@geggus.net>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111, USA.
+#
+# commandline Options
+#
+#
+Name mashctld
+
+Usage {two-level temperature and mash process controler}
+
+Flag -l list {List available sensors and actuators on bus and terminate}
+
+Flag -d debug {print debug info}
+
+Flag -bd daemon {run Program as a daemon in background}
+
+String -c configfile {runtime configuration file} -d /etc/mashctld.conf
+
+String -u username {username to switch to, when run as root} -d webmash
+
+String -p pidfile {pidfile location, when run as root and in background} -d /var/run/mashctld.pid
+
+Flag -s simulation {simulate temperature measurements}
+
+String -n netif {show only given network interfaces in getifinfo call} -c 0 oo

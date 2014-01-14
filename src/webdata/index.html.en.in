@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web 2.0 Mash</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/mash.css" type="text/css" />
+  </head>
+
+  <body>
+    <p style="text-align: center;">
+    <!--LANG-->
+    </p>
+    <h1>Web 2.0 Mash</h1>
+    <h2>
+      <img src="images/tux-brew.png">
+      <p>
+        <a href="mash.html">Multi-Rest Mash control</a>
+      </p>
+      <p>
+        <a href="tempctrl.html">Temperature control</a>
+      </p>
+      <p>
+        <a href="about.html">About Web 2.0 Mash</a>    
+      </p>
+    </h2>
+  </body>
+</html>

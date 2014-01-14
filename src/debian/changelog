@@ -1,0 +1,79 @@
+web20mash (3.1) unstable; urgency=low
+
+  * add a /getifinfo call for querying network interface settings
+
+ -- Sven Geggus <sven-deb@geggus.net>  Thu, 19 Dec 2013 18:26:49 +0100
+
+web20mash (3.0) unstable; urgency=low
+
+  * plugin system for actuator control
+  * non-web client for adafruit ht16k33 based 7-segment dislay
+  * changed control semantic for stirring device:
+    stirring device is now always on, if heating device is on
+
+ -- Sven Geggus <sven-deb@geggus.net>  Mon, 01 Apr 2013 15:19:21 +0200
+
+web20mash (2.2) unstable; urgency=low
+
+  * pre 3.0 release with plugin system for actuator control
+
+ -- Sven Geggus <sven-deb@geggus.net>  Wed, 06 Mar 2013 19:05:29 +0100
+
+web20mash (2.1) unstable; urgency=low
+
+  * enhance debian package, add initscript, autogen. system user etc.
+  * allow for readonly root filesystem
+
+ -- Sven Geggus <sven-deb@geggus.net>  Sat, 02 Mar 2013 15:34:03 +0100
+
+web20mash (2.0) unstable; urgency=low
+
+  * Full support for Raspberry Pi GPIO (e.g. on my own RaspIO Hardware)
+    and an optional stirring device, that's why we call this 2.0 now
+
+ -- Sven Geggus <sven-deb@geggus.net>  Sun, 17 Feb 2013 18:07:28 +0100
+
+web20mash (1.4) unstable; urgency=low
+
+  * Add support for DS2408 and DS2413 actuators
+
+ -- Sven Geggus <sven-deb@geggus.net>  Thu, 15 Nov 2012 21:10:06 +0100
+
+web20mash (1.3) unstable; urgency=low
+
+  * Add an indicator to visualise if a mash process is running
+
+ -- Sven Geggus <sven-deb@geggus.net>  Sat, 10 Nov 2012 15:03:02 +0100
+
+web20mash (1.2) unstable; urgency=low
+
+  New features:
+    * Some people do a yet another rest called "mashing out rest", so
+      add this one as well
+    * Also add an alert for the last chance to do an iodine test
+      before enzymes are disabled by lautering temperature
+    * Add a simple simulation/demo mode
+    * Make daemon to drop privileges if run as root
+
+ -- Sven Geggus <sven-deb@geggus.net>  Wed, 07 Nov 2012 23:14:36 +0100
+
+web20mash (1.1) unstable; urgency=low
+
+  * Add additional state for increasing heat up to the temperature where mash has
+    to be seperated from the wort
+    (I do not no the english word for "abmaischen" in german, just
+     called it "mashing out" on the GUI)
+
+ -- Sven Geggus <sven-deb@geggus.net>  Wed, 31 Oct 2012 22:46:56 +0100
+
+web20mash (1.0.1) unstable; urgency=low
+
+  * Minor Bugfix release
+
+ -- Sven Geggus <sven-web20mash@geggus.net>  Tue, 10 Jan 2012 19:51:42 +0100
+
+web20mash (1.0) unstable; urgency=low
+
+  * Initial Release
+
+ -- Sven Geggus <sven-web20mash@geggus.net>  Fri, 6 Jan 2012 15:38:34 +0100
